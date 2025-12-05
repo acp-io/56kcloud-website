@@ -40,8 +40,8 @@ export default function FeatureAlternatePositionImage(
 							<Link href={feature.link}>
 								<div
 									className={cn(
-										"border border-slate-800 rounded-3xl w-full h-full flex flex-col items-start gap-x-10 gap-y-6 \
-                    sm:gap-y-8 p-6 sm:p-8 bg-slate-900",
+										"border border-primary-300 rounded-3xl w-full h-full flex flex-col items-start gap-x-10 gap-y-6 \
+                    sm:gap-y-8 p-6 sm:p-8 bg-white",
 										index === 0 ? "lg:flex-col" : "lg:flex-row",
 										index % 2 !== 0 && index !== 0 ? "lg:flex-row-reverse" : "",
 									)}
@@ -59,20 +59,20 @@ export default function FeatureAlternatePositionImage(
 										<div className="space-y-4">
 											<h3
 												className="text-2xl leading-7 font-semibold w-fit  bg-clip-text \
-                        text-primary-500"
+                        text-primary-600"
 											>
 												{feature.title}
 											</h3>
-											<p className="text-sm leading-6 text-slate-400 font-light">
+											<p className="text-sm leading-6 text-primary-400 font-light">
 												{feature.description}
 											</p>
 										</div>
 										<div className="flex flex-row items-center gap-2 mt-4 ml-auto">
-											<p className="text-sm font-normal text-slate-50">
+											<p className="text-sm font-normal text-brand-600">
 												{feature.cta}
 											</p>
 											<ArrowRightIcon
-												className="w-4 h-4 text-sky-500"
+												className="w-4 h-4 text-brand-600"
 												strokeWidth={2}
 											/>
 										</div>

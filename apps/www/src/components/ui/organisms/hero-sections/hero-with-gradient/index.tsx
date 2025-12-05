@@ -22,21 +22,21 @@ export default function HeroWithGradient(props: HeroWithGradientProps) {
 	};
 
 	return (
-		<ComponentLayout gradientVariant="heroGradient">
+		<ComponentLayout gradientVariant="heroGradient" className="bg-brand-600">
 			<div className="pb-8 pt-52 lg:pb-20 lg:pt-60">
 				<div className={cn(props.surtitle ? "space-y-8" : "")}>
 					{props.surtitle && (
 						<div className="flex justify-center w-full">
-							<span className="text-base font-semibold  bg-clip-text text-primary-500">
+							<span className="text-base font-semibold  bg-clip-text text-white">
 								{props.surtitle}
 							</span>
 						</div>
 					)}
-					<h2 className="w-fit max-w-5xl mx-auto text-center text-5xl leading-[1.1875] font-extrabold tracking-tight  bg-clip-text text-secondary-500 lg:text-[58px]">
+					<h2 className="w-fit max-w-5xl mx-auto text-center text-5xl leading-[1.1875] font-extrabold tracking-tight text-white lg:text-[58px]">
 						{title}
 					</h2>
 				</div>
-				<div className="max-w-3xl mx-auto text-lg font-light text-center mt-7 text-slate-400">
+				<div className="max-w-3xl mx-auto text-lg font-light text-center mt-7 text-white">
 					<p>{subtitle}</p>
 				</div>
 				{props.cta && (
@@ -46,10 +46,10 @@ export default function HeroWithGradient(props: HeroWithGradientProps) {
 							size="large"
 							tone={props.cta.tone}
 							shape="circle"
-							className="text-slate-950 bg-slate-50/85 px-6 hover:bg-current hover:text-current"
+							className="text-brand-600 bg-white px-6 hover:bg-primary-100 hover:text-brand-600"
 							trailing={
 								<ArrowRightIcon
-									className="w-4 h-4 text-sky-500"
+									className="w-4 h-4 text-brand-600"
 									strokeWidth={2}
 								/>
 							}

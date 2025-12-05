@@ -18,13 +18,16 @@ export default function FeatureThreeColumnWithIcons(
 		: "";
 
 	return (
-		<ComponentLayout gradientVariant="floatingGradient">
+		<ComponentLayout
+			gradientVariant="floatingGradient"
+			className="bg-primary-600"
+		>
 			<div className="pb-20 pt-9 lg:pb-[104px] lg:pt-[120px] space-y-10 lg:space-y-20">
 				<div className="mx-auto text-center space-y-4 max-w-4xl">
-					<h2 className="w-fit mx-auto text-[44px] leading-[48px] font-extrabold tracking-tight  bg-clip-text text-secondary-500 lg:leading-[58px]">
+					<h2 className="w-fit mx-auto text-[44px] leading-[48px] font-extrabold tracking-tight text-white lg:leading-[58px]">
 						{title}
 					</h2>
-					<p className="text-base leading-7 text-slate-400 font-light">
+					<p className="text-base leading-7 text-white font-light">
 						{subtitle}
 					</p>
 				</div>
@@ -33,7 +36,7 @@ export default function FeatureThreeColumnWithIcons(
 						{props.features?.map((feature, index) => (
 							<div
 								key={index}
-								className="relative w-full h-full flex flex-col pt-12 p-6 border border-slate-800 rounded-3xl bg-slate-900 sm:pt-12 sm:p-8"
+								className="relative w-full h-full flex flex-col pt-12 p-6 border border-primary-400 rounded-3xl bg-white sm:pt-12 sm:p-8"
 							>
 								<div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
 									<div className="w-14 h-14 rounded-full border-gradient bg-slate-800 flex items-center justify-center">
@@ -45,10 +48,10 @@ export default function FeatureThreeColumnWithIcons(
 									</div>
 								</div>
 								<div className="space-y-4 text-center">
-									<h3 className="text-2xl leading-7 font-semibold  bg-clip-text text-primary-500">
+									<h3 className="text-2xl leading-7 font-semibold text-primary-600">
 										{feature.title}
 									</h3>
-									<p className="text-sm leading-6 text-slate-400 font-light">
+									<p className="text-sm leading-6 text-primary-400 font-light">
 										{feature.description}
 									</p>
 								</div>

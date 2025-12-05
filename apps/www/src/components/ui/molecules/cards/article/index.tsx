@@ -29,8 +29,8 @@ export default function ArticleCard({
 			<Link
 				href={`/blog/${article.slug}`}
 				className={cn(
-					"relative flex flex-col overflow-hidden cursor-pointer border border-slate-800 rounded-3xl w-full h-full \
-          gap-x-10 gap-y-6 p-6 sm:p-8",
+					"relative flex flex-col overflow-hidden cursor-pointer border border-primary-300 rounded-3xl w-full h-full \
+          gap-x-10 gap-y-6 p-6 sm:p-8 bg-white",
 					fixedHeight ? "h-[576px]" : "",
 				)}
 			>
@@ -45,24 +45,24 @@ export default function ArticleCard({
 					</div>
 					<div className="mt-5 space-y-3">
 						<h3
-							className="text-lg leading-6 font-semibold w-fit  bg-clip-text text-primary-500 \
+							className="text-lg leading-6 font-semibold w-fit  bg-clip-text text-primary-600 \
               line-clamp-2"
 						>
 							{article.title}
 						</h3>
 						<p
 							className={cn(
-								"text-sm font-light leading-6 text-slate-400 line-clamp-4",
+								"text-sm font-light leading-6 text-primary-400 line-clamp-4",
 								fixedHeight && "h-24",
 							)}
 						>
 							{article.description}
 						</p>
 					</div>
-					<div className="flex flex-wrap items-center mt-8 text-sm gap-x-3 text-slate-400">
+					<div className="flex flex-wrap items-center mt-8 text-sm gap-x-3 text-primary-400">
 						<Avatar image={article.author.avatar} size="md" />
 						<div className="flex flex-col text-base">
-							<span className="text-sm leading-6 font-medium text-slate-50">
+							<span className="text-sm leading-6 font-medium text-primary-600">
 								{article.author.name}
 							</span>
 							<div className="text-sm leading-6 flex font-light gap-x-2">

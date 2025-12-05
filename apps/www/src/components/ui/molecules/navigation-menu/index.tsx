@@ -44,7 +44,7 @@ export default function NavigationMenu({
 								asChild
 								tone="primary"
 								variant="default"
-								className="pl-5 pr-[18px] text-slate-50 text-sm font-medium bg-transparent cursor-pointer hover:text-slate-50 hover:bg-slate-800"
+								className="pl-5 pr-[18px] text-primary-600 text-sm font-medium bg-transparent cursor-pointer hover:text-primary-600 hover:bg-slate-800"
 								onClick={(e) => e.preventDefault()}
 							>
 								<NavigationMenuTrigger className="gap-1">
@@ -82,7 +82,7 @@ export default function NavigationMenu({
 						asChild
 						tone="primary"
 						variant="link"
-						className="text-slate-50 !px-0 !py-0 text-sm font-semibold"
+						className="text-primary-600 !px-0 !py-0 text-sm font-semibold"
 					>
 						<Link href={navigationItem.link || ""}>{navigationItem.title}</Link>
 					</Button>
@@ -160,7 +160,7 @@ export const ListItem = React.forwardRef<
 					align="start"
 					className={cn(
 						className,
-						pathMatcher(href || "") ? "text-slate-50" : "",
+						pathMatcher(href || "") ? "text-primary-600" : "",
 					)}
 				>
 					<Link href={href || ""}>

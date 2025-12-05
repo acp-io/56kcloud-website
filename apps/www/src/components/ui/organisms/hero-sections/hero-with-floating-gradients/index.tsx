@@ -16,12 +16,12 @@ export default function HeroWithFloatingGradients(
 	props: HeroWithFloatingGradientsProps,
 ) {
 	return (
-		<ComponentLayout className="overflow-hidden">
+		<ComponentLayout className="overflow-hidden bg-brand-600">
 			<div className="pb-8 pt-52 lg:pt-64 lg:pb-20">
-				<h1 className="w-fit mx-auto text-center text-5xl leading-[1.1875] font-extrabold tracking-tight  bg-clip-text text-secondary-500 lg:text-7xl lg:leading-[1.2]">
+				<h1 className="w-fit mx-auto text-center text-5xl leading-[1.1875] font-extrabold tracking-tight text-white lg:text-7xl lg:leading-[1.2]">
 					{props.title}
 				</h1>
-				<div className="text-lg font-light text-center mt-7 text-slate-400">
+				<div className="text-lg font-light text-center mt-7 text-white">
 					<p>{props.subtitle}</p>
 				</div>
 				<div className="flex items-center justify-center mt-10">
@@ -30,10 +30,10 @@ export default function HeroWithFloatingGradients(
 						size="large"
 						tone={props.cta.tone}
 						shape="circle"
-						className="text-slate-950 bg-slate-50/85 px-6 hover:bg-current hover:text-current"
+						className="text-brand-600 bg-white px-6 hover:bg-primary-100 hover:text-brand-600"
 						trailing={
 							<ArrowRightIcon
-								className="w-4 h-4 text-sky-500"
+								className="w-4 h-4 text-brand-600"
 								strokeWidth={2}
 							/>
 						}

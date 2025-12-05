@@ -5,10 +5,9 @@ import { Dialog } from "@headlessui/react";
 import { Dictionary } from "@/models/dictionary.model";
 import { cn, getNavigationLinks } from "@/utils/toolbox";
 import { useState } from "react";
-import Acp from "../../svgs/logos/acp";
 import LanguageSwitcher from "../../molecules/language-switcher";
 import Link from "next/link";
-import Logo from "../../svgs/logos/56k";
+import Logo from "../../svgs/logos/acp-e";
 import NavigationMenu from "../../molecules/navigation-menu";
 
 export type HeaderProps = {
@@ -21,25 +20,15 @@ export default function Header({ dictionary }: HeaderProps) {
 	const navigation = getNavigationLinks(dictionary);
 
 	return (
-		<header className="absolute inset-x-0 top-0 z-10 flex flex-col justify-center items-center">
+		<header className="absolute inset-x-0 top-0 z-10 flex flex-col justify-center items-center bg-white">
 			<nav
 				className="flex items-center justify-between w-full p-6 max-w-7xl"
 				aria-label="Global"
 			>
 				<div className="relative">
 					<Link href="/" className="text-slate-50">
-						<span className="sr-only">56k Cloud</span>
+						<span className="sr-only">ACP Engineering</span>
 						<Logo className="h-8 xl:h-10" />
-					</Link>
-					<Link
-						href="https://www.acp-gruppe.com/en/"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="absolute flex items-center text-slate-50 left-1/2 -translate-x-1/2 translate-y-1"
-					>
-						<p className="text-[8px] xl:text-[10px] font-light">an </p>
-						<Acp className="h-[8px] xl:h-[10px] w-auto mx-[3px]" />
-						<p className="text-[8px] xl:text-[10px] font-light"> company</p>
 					</Link>
 				</div>
 				<div className="flex lg:hidden">
@@ -81,7 +70,7 @@ export default function Header({ dictionary }: HeaderProps) {
 					<div className="flex flex-col gap-y-12">
 						<div className="flex items-center justify-between">
 							<Link href="/" className="-m-1.5 p-1.5 text-white">
-								<span className="sr-only">56k Cloud</span>
+								<span className="sr-only">ACP Engineering</span>
 								<Logo className="h-7" />
 							</Link>
 							<button

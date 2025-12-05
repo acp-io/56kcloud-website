@@ -34,17 +34,16 @@ export default function BlogThreeColumn(props: BlogThreeColumnProps) {
 	));
 
 	return (
-		<ComponentLayout gradientVariant="floatingGradient">
+		<ComponentLayout gradientVariant="floatingGradient" className="bg-primary-600">
 			<div className="py-20 pt-6 lg:py-[104px]">
 				<div className="mx-auto max-w-7xl space-y-10 lg:space-y-20">
 					<div className="space-y-4 max-w-4xl">
 						<h2
-							className="w-fit text-[44px] leading-[1.1875] font-extrabold tracking-tight  bg-clip-text \
-              text-secondary-500"
+							className="w-fit text-[44px] leading-[1.1875] font-extrabold tracking-tight text-white"
 						>
 							{props.title}
 						</h2>
-						<p className="text-base leading-7 text-slate-400 font-light">
+						<p className="text-base leading-7 text-white font-light">
 							{props.subtitle}
 						</p>
 					</div>
