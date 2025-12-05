@@ -24,7 +24,7 @@ export default function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
 			</div>
 			<div className="flex flex-col p-6 sm:p-8">
 				<div className="space-y-4">
-					<h3 className="text-lg leading-6 font-semibold w-fit  bg-clip-text text-primary-600 line-clamp-2">
+					<h3 className="text-lg leading-6 font-semibold w-fit  bg-clip-text text-brand-600 line-clamp-2">
 						{caseStudy.title}
 					</h3>
 					<p className="text-sm leading-6 text-primary-400 font-light line-clamp-3">

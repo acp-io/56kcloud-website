@@ -48,7 +48,7 @@ export default function FeatureThreeColumnWithIcons(
 									</div>
 								</div>
 								<div className="space-y-4 text-center">
-									<h3 className="text-2xl leading-7 font-semibold text-primary-600">
+									<h3 className="text-2xl leading-7 font-semibold text-brand-600">
 										{feature.title}
 									</h3>
 									<p className="text-sm leading-6 text-primary-400 font-light">

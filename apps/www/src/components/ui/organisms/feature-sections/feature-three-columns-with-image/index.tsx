@@ -44,7 +44,7 @@ export default function FeatureThreeColumnsWithImage(
 										</div>
 										<div className="absolute left-0 bottom-0 flex flex-col p-6 pt-0 sm:p-8 bg-white/95 backdrop-blur-sm rounded-b-3xl">
 											<div className="space-y-4">
-												<h3 className="text-2xl leading-7 font-semibold w-fit text-primary-600">
+												<h3 className="text-2xl leading-7 font-semibold w-fit text-brand-600">
 													{feature.title}
 												</h3>
 												<p className="text-sm leading-6 text-primary-400 font-light line-clamp-4">

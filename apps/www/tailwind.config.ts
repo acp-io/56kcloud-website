@@ -147,10 +147,6 @@ const config = {
 			backgroundImage: {
 				"text-gradient-gray":
 					"linear-gradient(to left, rgba(248, 250, 252, 0.7) 10%, rgba(248, 250, 252, 1), rgba(248, 250, 252, 0.7) 90%)",
-				"text-gradient-blue":
-					"linear-gradient(to left, #F0F9FF 0%, #0EA5E9 80%)",
-				"radial-gradient":
-					"radial-gradient(40% 90% at 50% 0%, rgba(14, 165, 233, 0.64) 0%, rgba(15, 23, 42, 0.00) 180%)",
 				"brand-gradient":
 					"linear-gradient(to bottom, #F00F40 0%, #900926 100%)",
 			},

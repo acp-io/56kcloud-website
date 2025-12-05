@@ -45,7 +45,7 @@ export default function ArticleCard({
 					</div>
 					<div className="mt-5 space-y-3">
 						<h3
-							className="text-lg leading-6 font-semibold w-fit  bg-clip-text text-primary-600 \
+							className="text-lg leading-6 font-semibold w-fit  bg-clip-text text-brand-600 \
               line-clamp-2"
 						>
 							{article.title}

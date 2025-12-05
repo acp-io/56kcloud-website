@@ -48,7 +48,7 @@ export default function FeatureThreeColumnWithLargeIcons({
 								className="flex flex-col p-6 border border-primary-300 rounded-xl bg-white"
 							>
 								<a href={feature.link}>
-									<div className="text-lg font-normal text-primary-600">
+									<div className="text-lg font-normal text-brand-600">
 										<div className="flex items-center justify-center w-8 h-8 mb-6 rounded-lg">
 											<Icon
 												{...feature.icon}

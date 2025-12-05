@@ -59,7 +59,7 @@ export default function FeatureAlternatePositionImage(
 										<div className="space-y-4">
 											<h3
 												className="text-2xl leading-7 font-semibold w-fit  bg-clip-text \
-                        text-primary-600"
+                        text-brand-600"
 											>
 												{feature.title}
 											</h3>

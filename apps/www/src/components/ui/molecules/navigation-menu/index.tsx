@@ -44,21 +44,21 @@ export default function NavigationMenu({
 								asChild
 								tone="primary"
 								variant="default"
-								className="pl-5 pr-[18px] text-primary-600 text-sm font-medium bg-transparent cursor-pointer hover:text-primary-600 hover:bg-slate-800"
+								className="pl-5 pr-[18px] text-primary-600 text-sm font-medium bg-transparent cursor-pointer hover:text-primary-600 hover:bg-primary-100"
 								onClick={(e) => e.preventDefault()}
 							>
 								<NavigationMenuTrigger className="gap-1">
 									{navigationItem.title}
 								</NavigationMenuTrigger>
 							</Button>
-							<NavigationMenuContent className="left-[2px] p-6 bg-slate-900 border border-slate-800">
+							<NavigationMenuContent className="left-[2px] p-6 bg-primary-900 border border-primary-800">
 								<ul className={cn(navigationItem.dropdownWidth, "space-y-4")}>
 									{navigationItem.links &&
 										navigationItem.links.map((link, index) => (
 											<ListItem
 												key={index}
 												href={link.link}
-												className="text-slate-400 text-sm leading-[18px] font-medium hover:text-slate-50"
+												className="text-primary-300 text-sm leading-[18px] font-medium hover:text-primary-100"
 											>
 												{link.icon && (
 													<div>
@@ -94,7 +94,7 @@ export default function NavigationMenu({
 			<div className="flex-col space-y-10">
 				{navigationItems.map((navigationItem, index) => (
 					<div key={index}>
-						<p className="text-base font-medium text-slate-50">
+						<p className="text-base font-medium text-primary-100">
 							{navigationItem.title}
 						</p>
 						<ul
@@ -113,8 +113,8 @@ export default function NavigationMenu({
 										tone="primary"
 										variant="link"
 										className={cn(
-											pathMatcher(link.link) ? "!text-slate-50" : "",
-											"text-sm font-medium text-slate-400 hover:text-slate-50",
+											pathMatcher(link.link) ? "!text-primary-100" : "",
+											"text-sm font-medium text-primary-300 hover:text-primary-100",
 										)}
 									>
 										<Link href={link.link} onClick={onLinkClick}>
@@ -160,7 +160,7 @@ export const ListItem = React.forwardRef<
 					align="start"
 					className={cn(
 						className,
-						pathMatcher(href || "") ? "text-primary-600" : "",
+						pathMatcher(href || "") ? "text-brand-600" : "",
 					)}
 				>
 					<Link href={href || ""}>

@@ -23,14 +23,14 @@ export default function LogoCloudsSimpleWithTitle(
 		<ComponentLayout>
 			<div className="pt-9 pb-0 lg:pt-[104px] lg:pb-6">
 				<div className="mx-auto max-w-7xl">
-					<div className="relative w-full h-full rounded-3xl px-6 py-12 pb-32 bg-radial-gradient sm:px-8 lg:rounded-[48px] lg:px-12 lg:pt-20">
+					<div className="relative w-full h-full rounded-3xl px-6 py-12 pb-32 bg-primary-600 sm:px-8 lg:rounded-[48px] lg:px-12 lg:pt-20">
 						<div className="flex flex-col items-center space-y-4">
 							{props.surtitle && (
-								<span className="text-base font-semibold  bg-clip-text text-primary-500">
+								<span className="text-base font-semibold bg-clip-text text-white">
 									{props.surtitle}
 								</span>
 							)}
-							<h2 className="w-fit text-[44px] leading-[1.1875] font-extrabold text-center tracking-tight  bg-clip-text text-secondary-500">
+							<h2 className="w-fit text-[44px] leading-[1.1875] font-extrabold text-center tracking-tight bg-clip-text text-white">
 								{props.title}
 							</h2>
 						</div>
@@ -44,7 +44,7 @@ export default function LogoCloudsSimpleWithTitle(
 									<Link
 										href={`/partners/${item.link || "#"}`}
 										key={index}
-										className="flex items-center justify-center mx-4 w-[234px] p-7 sm:p-8 lg:p-10 bg-[#151E31] rounded-2xl border border-slate-800 z-50 hover:bg-[#151E31]/50 hover:border-transparent transition-all duration-200"
+										className="flex items-center justify-center mx-4 w-[234px] p-7 sm:p-8 lg:p-10 bg-primary-900 rounded-2xl border border-slate-800 z-50 hover:bg-primary-900/50 hover:border-transparent transition-all duration-200"
 									>
 										<Image
 											className="max-h-6 sm:max-h-8 lg:max-h-10"
