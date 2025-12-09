@@ -1,9 +1,9 @@
 import '../../styles/global.css'
-import {Inter} from 'next/font/google'
 import {Metadata} from 'next'
 import {cn} from '@/utils/toolbox'
 import {hostname} from '../../../configs/server'
 import {locales} from '../../../configs/shared'
+import localFont from 'next/font/local'
 
 export const metadata: Metadata = {
   metadataBase: new URL(hostname)
@@ -20,9 +20,20 @@ export type RootLayoutProps = {
   }
 }
 
-const inter = Inter({
-  weight: ['300', '400', '500', '600', '800'],
-  preload: false
+const apexNew = localFont({
+  src: [
+    {
+      path: '../../../fonts/apex-new-book.otf',
+      weight: '350',
+      style: 'book'
+    },
+    {
+      path: '../../../fonts/apex-new-medium.otf',
+      weight: '500',
+      style: 'medium'
+    }
+  ],
+  variable: '--font-apex-new'
 })
 
 export default function Root({children, params}: RootLayoutProps) {
@@ -49,7 +60,7 @@ export default function Root({children, params}: RootLayoutProps) {
           name='twitter:card'
         />
       </head>
-      <body className={cn('relative bg-white isolate', inter.className)}>{children}</body>
+      <body className={cn('relative bg-white isolate', apexNew.className)}>{children}</body>
     </html>
   )
 }
