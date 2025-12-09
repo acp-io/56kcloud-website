@@ -1,19 +1,19 @@
 import {IconProps} from '@/models/icon.model'
-import Acp from './index'
+import AcpE from './index'
 import type {Meta} from '@storybook/react'
 
 const meta = {
-  title: 'components/Svgs/Logos/Acp',
-  component: Acp,
+  title: 'components/Svgs/Logos/AcpE',
+  component: AcpE,
   tags: ['autodocs']
-} satisfies Meta<typeof Acp>
+} satisfies Meta<typeof AcpE>
 
 export default meta
 
 export const Default = {
   name: 'Default',
   render: (args: IconProps) => (
-    <Acp
+    <AcpE
       {...args}
       className='text-white'
     />

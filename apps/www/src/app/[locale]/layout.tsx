@@ -24,7 +24,7 @@ const apexNew = localFont({
   src: [
     {
       path: '../../../fonts/apex-new-book.otf',
-      weight: '350',
+      weight: '400',
       style: 'book'
     },
     {

@@ -1,6 +1,6 @@
 import {IconProps} from '../../../../../models/icon.model'
 
-export default function Logo(props: IconProps) {
+export default function AcpE(props: IconProps) {
   return (
     <svg
       width='131'

@@ -1,4 +1,3 @@
-import {ArrowRightIcon} from '@heroicons/react/24/outline'
 import {CTAProps} from '@/models/cta.model'
 import {ImageProps} from '@/models/image.model'
 import Button from '@/components/ui/atoms/button'
@@ -16,10 +15,10 @@ export default function HeroWithFloatingGradients(props: HeroWithFloatingGradien
   return (
     <ComponentLayout className='overflow-hidden bg-brand-600'>
       <div className='pb-8 pt-52 lg:pt-64 lg:pb-20'>
-        <h1 className='w-fit mx-auto text-center text-5xl leading-[1.1875] font-medium tracking-tight text-white lg:text-7xl lg:leading-[1.2]'>
+        <h1 className='w-fit mx-auto text-center text-5xl leading-[1.1875] font-medium text-white lg:text-7xl lg:leading-[1.2]'>
           {props.title}
         </h1>
-        <div className='text-lg font-light text-center mt-7 text-white'>
+        <div className='text-xl font-normal text-center mt-7 text-white'>
           <p>{props.subtitle}</p>
         </div>
         <div className='flex items-center justify-center mt-10'>
@@ -27,14 +26,7 @@ export default function HeroWithFloatingGradients(props: HeroWithFloatingGradien
             asChild
             size='large'
             tone={props.cta.tone}
-            shape='circle'
             className='text-brand-600 bg-white px-6 hover:bg-primary-100 hover:text-brand-600'
-            trailing={
-              <ArrowRightIcon
-                className='w-4 h-4 text-brand-600'
-                strokeWidth={2}
-              />
-            }
           >
             <Link
               href={props.cta.link}

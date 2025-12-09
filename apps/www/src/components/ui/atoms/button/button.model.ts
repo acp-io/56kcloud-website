@@ -91,7 +91,7 @@ export class ButtonProps {
   public buttonVariants() {
     return cn(
       'flex items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 \
-      disabled:opacity-50 disabled:cursor-not-allowed font-medium w-fit',
+      disabled:opacity-50 disabled:cursor-not-allowed font-normal w-fit',
       toneClasses[this.tone][this.variant],
       sizeClasses[this.size],
       shapeClasses[this.shape],
