@@ -18,7 +18,7 @@ export default function HeroWithFloatingGradients(props: HeroWithFloatingGradien
         <h1 className='w-fit mx-auto text-center text-5xl leading-[1.1875] font-medium text-white lg:text-7xl lg:leading-[1.2]'>
           {props.title}
         </h1>
-        <div className='text-xl font-normal text-center mt-7 text-white'>
+        <div className='text-xl leading-8 text-center mt-7 text-white'>
           <p>{props.subtitle}</p>
         </div>
         <div className='flex items-center justify-center mt-10'>
