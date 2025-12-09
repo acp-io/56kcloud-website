@@ -1,59 +1,59 @@
 {
-	"name": "56kcloud-website",
-	"version": "1.0.0",
-	"private": true,
-	"description": "",
-	"keywords": [],
-	"repository": {
-		"url": "https://github.com/56kcloud/56kcloud-website"
-	},
-	"license": "ISC",
-	"author": "56kcloud",
-	"workspaces": [
-		"apps/www",
-		"apps/cms"
-	],
-	"scripts": {
-		"build": "cd apps/cms && npm run build",
-		"build:www": "cd apps/www && npm run build",
-		"dev:cms": "cd apps/cms && npm run dev",
-		"dev:www": "cd apps/www && npm run dev",
-		"lint": "run-p lint-eslint prettier-check",
-		"lint-eslint": "eslint . --ext js,jsx,ts,tsx --max-warnings=0 --config .eslintrc.json --no-eslintrc",
-		"prettier-check": "prettier --check .",
-		"screenshots": "tsx ./scripts/screenshots.ts",
-		"start": "cd apps/cms && npm run start",
-		"storybook:check": "npx tsx ./scripts/storybook-checker.ts"
-	},
-	"dependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-router-dom": "^5.2.0"
-	},
-	"devDependencies": {
-		"@faker-js/faker": "^8.3.1",
-		"@types/node": "22.5.0",
-		"@types/react": "^18.3.4",
-		"@types/react-dom": "^18.3.0",
-		"@typescript-eslint/eslint-plugin": "^8.3.0",
-		"@typescript-eslint/parser": "^8.3.0",
-		"dotenv": "^16.4.5",
-		"eslint": "^8.5.6",
-		"eslint-config-standard": "^17.1.0",
-		"eslint-plugin-react": "^7.35.0",
-		"eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
-		"eslint-plugin-unused-imports": "^4.1.3",
-		"fs": "0.0.1-security",
-		"npm-run-all": "^4.1.5",
-		"playwright": "^1.57.0",
-		"prettier": "^3.3.3",
-		"tablemark": "^3.0.0",
-		"ts-node": "^10.9.2",
-		"tsx": "^4.19.0",
-		"typescript": "^5.3.3"
-	},
-	"engines": {
-		"node": "20",
-		"pnpm": "10"
-	}
+  "name": "56kcloud-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "url": "https://github.com/56kcloud/56kcloud-website"
+  },
+  "license": "ISC",
+  "author": "56kcloud",
+  "workspaces": [
+    "apps/www",
+    "apps/cms"
+  ],
+  "scripts": {
+    "build": "cd apps/cms && npm run build",
+    "build:www": "cd apps/www && npm run build",
+    "dev:cms": "cd apps/cms && npm run dev",
+    "dev:www": "cd apps/www && npm run dev",
+    "lint": "run-p lint-eslint prettier-check",
+    "lint-eslint": "eslint . --ext js,jsx,ts,tsx --max-warnings=0 --config .eslintrc.json --no-eslintrc",
+    "prettier-check": "prettier --check .",
+    "screenshots": "tsx ./scripts/screenshots.ts",
+    "start": "cd apps/cms && npm run start",
+    "storybook:check": "npx tsx ./scripts/storybook-checker.ts"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@types/node": "22.5.0",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.5.6",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "eslint-plugin-unused-imports": "^4.1.3",
+    "fs": "0.0.1-security",
+    "npm-run-all": "^4.1.5",
+    "playwright": "^1.57.0",
+    "prettier": "^3.3.3",
+    "tablemark": "^3.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": "20",
+    "pnpm": "10"
+  }
 }
