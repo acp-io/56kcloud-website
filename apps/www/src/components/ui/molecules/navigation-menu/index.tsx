@@ -44,19 +44,22 @@ export default function NavigationMenu({
                 asChild
                 tone='primary'
                 variant='default'
-                className='pl-5 pr-[18px] text-primary-600 text-sm font-medium bg-transparent cursor-pointer hover:text-primary-600 hover:bg-primary-100'
+                className='pl-5 pr-[18px] text-primary-600 font-medium bg-transparent cursor-pointer'
                 onClick={(e) => e.preventDefault()}
               >
                 <NavigationMenuTrigger className='gap-1'>{navigationItem.title}</NavigationMenuTrigger>
               </Button>
-              <NavigationMenuContent className='left-[2px] p-6 bg-primary-900 border border-primary-800'>
-                <ul className={cn(navigationItem.dropdownWidth, 'space-y-4')}>
+              <NavigationMenuContent className='left-[2px] p-4 bg-white border-none'>
+                <ul className={cn(navigationItem.dropdownWidth, 'space-y-1')}>
                   {navigationItem.links &&
                     navigationItem.links.map((link, index) => (
                       <ListItem
                         key={index}
                         href={link.link}
-                        className='text-primary-300 text-sm leading-[18px] font-medium hover:text-primary-100'
+                        className={cn(
+                          'w-full !p-2 text-primary-600 font-medium hover:bg-primary-200',
+                          link.icon ? '!pl-2' : '!pl-3'
+                        )}
                       >
                         {link.icon && (
                           <div>

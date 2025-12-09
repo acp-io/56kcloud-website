@@ -41,7 +41,7 @@ export default function LanguageSwitcher({mobileMenuOpen}: LanguageSwitcherProps
           key={locale}
           tone='secondary'
           variant='link'
-          className='p-0 text-base text-slate-400 uppercase data-[state=active]:text-slate-50 hover:text-slate-50'
+          className='p-0 text-base text-slate-400 uppercase data-[active=true]:text-slate-50 hover:text-slate-50'
           data-active={pathMatcher(locale)}
         >
           <Link
@@ -64,21 +64,24 @@ export default function LanguageSwitcher({mobileMenuOpen}: LanguageSwitcherProps
             asChild
             tone='primary'
             variant='default'
-            className='px-5 text-slate-50 text-sm font-medium bg-transparent cursor-pointer hover:text-slate-50 \
-            hover:bg-slate-800'
+            className='px-5 text-primary-600 font-medium bg-transparent cursor-pointer hover:text-primary-600'
             onClick={(e) => e.preventDefault()}
           >
             <NavigationMenuTrigger className='uppercase gap-1'>{locale}</NavigationMenuTrigger>
           </Button>
-          <NavigationMenuContent className='!w-24 px-6 py-5 bg-slate-900 border border-slate-800'>
-            <ul className='space-y-3 w-52'>
+          <NavigationMenuContent className='!w-28 p-4 bg-white border-none'>
+            <ul className='space-y-1'>
               {locales.map((localeItem) => (
-                <ListItem key={localeItem}>
+                <ListItem
+                  key={localeItem}
+                  className='w-full'
+                >
                   <Button
                     asChild
                     tone='secondary'
                     variant='link'
-                    className='p-0 text-sm text-gray-400 uppercase data-[state=active]:text-slate-50 hover:text-slate-50'
+                    align='start'
+                    className='w-full !p-2 !pl-3 text-gray-600 font-medium uppercase hover:bg-primary-200 data-[active=true]:text-red-500'
                     data-active={pathMatcher(localeItem)}
                   >
                     <Link

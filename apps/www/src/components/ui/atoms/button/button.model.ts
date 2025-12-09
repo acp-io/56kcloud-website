@@ -27,9 +27,9 @@ const toneClasses: Record<(typeof buttonTones)[number], Record<(typeof buttonVar
 }
 
 const sizeClasses: Record<(typeof buttonSizes)[number], string> = {
-  small: 'px-2.5 py-1.5 text-sm',
-  medium: 'px-3 py-2 text-sm',
-  large: 'px-3.5 py-2.5 text-sm'
+  small: 'px-2.5 py-1.5 text-base',
+  medium: 'px-3 py-2 text-base',
+  large: 'px-3.5 py-2.5 text-base'
 }
 
 const shapeClasses: Record<(typeof buttonShapes)[number], string> = {
