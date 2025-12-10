@@ -1,13 +1,11 @@
 import {ArrowRightIcon} from '@heroicons/react/24/outline'
 import {CTAProps} from '@/models/cta.model'
-import {cn} from '@/utils/toolbox'
 import {replaceBrTagWithNewline} from '@/utils/toolbox'
 import Button from '@/components/ui/atoms/button'
 import ComponentLayout from '@/components/ui/atoms/component-layout'
 import Link from 'next/link'
 
 export type HeroWithGradientProps = {
-  surtitle?: string
   title: string
   subtitle: string
   cta?: CTAProps
@@ -22,22 +20,12 @@ export default function HeroWithGradient(props: HeroWithGradientProps) {
   }
 
   return (
-    <ComponentLayout
-      gradientVariant='heroGradient'
-      className='bg-brand-600'
-    >
+    <ComponentLayout className='bg-brand-600'>
       <div className='pb-8 pt-52 lg:pb-20 lg:pt-60'>
-        <div className={cn(props.surtitle ? 'space-y-8' : '')}>
-          {props.surtitle && (
-            <div className='flex justify-center w-full'>
-              <span className='text-base font-semibold  bg-clip-text text-white'>{props.surtitle}</span>
-            </div>
-          )}
-          <h2 className='w-fit max-w-5xl mx-auto text-center text-5xl leading-[1.1875] font-extrabold tracking-tight text-white lg:text-[58px]'>
-            {title}
-          </h2>
-        </div>
-        <div className='max-w-3xl mx-auto text-lg font-light text-center mt-7 text-white'>
+        <h2 className='w-fit max-w-5xl mx-auto text-center text-5xl leading-[1.1875] font-medium text-white lg:text-[58px]'>
+          {title}
+        </h2>
+        <div className='max-w-3xl mx-auto text-xl leading-8 text-center mt-7 text-white font-normal'>
           <p>{subtitle}</p>
         </div>
         {props.cta && (
