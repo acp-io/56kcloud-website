@@ -19,7 +19,7 @@ export default function CertificationsBadgesWithTitle(props: CertificationsBadge
       <div className='py-20 lg:pb-[104px] lg:pt-[120px]'>
         <div className='mx-auto space-y-12 max-w-4xl'>
           <div className='text-center space-y-4 max-w-4xl mx-auto'>
-            <h2 className='w-fit mx-auto text-[44px] leading-[48px] font-medium text-center tracking-tight text-primary-600 lg:leading-[58px]'>
+            <h2 className='w-fit mx-auto text-[44px] leading-[48px] font-medium text-center text-primary-600 lg:leading-[58px]'>
               {title}
             </h2>
             {subtitle && <p className='text-base leading-7 text-slate-400 font-light'>{subtitle}</p>}

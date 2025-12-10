@@ -14,13 +14,10 @@ export default function ValueTwoColumn(props: ValueTwoColumnProps) {
     <ComponentLayout>
       <div className='pb-20 pt-9 lg:pb-[104px] lg:pt-[120px]'>
         <div className='mx-auto text-center space-y-4 max-w-4xl'>
-          <h2
-            className='w-fit text-[44px] leading-[1.1875] font-extrabold tracking-tight  bg-clip-text \
-            text-secondary-500 lg:mx-auto'
-          >
+          <h2 className='w-fit mx-auto text-[44px] leading-[48px] font-medium text-center text-primary-600 lg:leading-[58px]'>
             {props.title}
           </h2>
-          <p className='text-base leading-7 text-slate-400 font-light text-left lg:text-center'>{props.subtitle}</p>
+          <p className='text-xl leading-[30px] text-primary-600 font-normal'>{props.subtitle}</p>
         </div>
         <div className='grid grid-cols-1 mt-10 gap-y-8 md:gap-8 md:grid-cols-12 md:grid-rows-2 w-full md:mt-20'>
           {props.values.map((value, index) => (
