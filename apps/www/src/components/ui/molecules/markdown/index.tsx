@@ -21,7 +21,8 @@ export default function MarkdownViewer({content, className, imageClassName}: Mar
     <div className='flex justify-center w-full'>
       <div
         className={cn(
-          'w-full px-4 text-base leading-[26px] text-slate-400 font-light prose prose-invert max-w-7xl prose-config',
+          'w-full px-4 text-lg leading-7 text-primary-600 font-normal prose prose-invert max-w-7xl prose-config',
+
           className
         )}
       >
@@ -36,10 +37,7 @@ export default function MarkdownViewer({content, className, imageClassName}: Mar
                   'w-fit font-extrabold tracking-tight  bg-clip-text text-secondary-500'
                 )
               } else if (type === 'h3' || type === 'h4' || type === 'h5' || type === 'h6') {
-                props.className = cn(
-                  props.className,
-                  'w-fit font-semibold tracking-tight  bg-clip-text text-secondary-500'
-                )
+                props.className = cn(props.className, 'text-lg leading-7 text-primary-600 font-medium')
               }
               if (type === 'pre') {
                 const language = (children as React.ReactElement).props.className?.replace('lang-', '')

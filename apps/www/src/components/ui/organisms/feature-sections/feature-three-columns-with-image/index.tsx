@@ -42,7 +42,7 @@ export default function FeatureThreeColumnsWithImage(props: FeatureThreeColumnsW
                       <h3 className='text-[26px] leading-8 font-semibold w-fit bg-clip-text text-brand-600'>
                         {feature.title}
                       </h3>
-                      <p className='text-lg leading-7 text-primary-400 font-light line-clamp-6'>
+                      <p className='text-lg leading-7 text-primary-400 font-normal line-clamp-6'>
                         {feature.description}
                       </p>
                     </div>

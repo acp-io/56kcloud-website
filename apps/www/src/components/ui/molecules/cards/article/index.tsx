@@ -49,7 +49,7 @@ export default function ArticleCard({article, fixedHeight}: ArticleCardProps) {
             >
               {article.title}
             </h3>
-            <p className={cn('text-sm font-light leading-6 text-primary-400 line-clamp-4', fixedHeight && 'h-24')}>
+            <p className={cn('text-sm font-normal leading-6 text-primary-400 line-clamp-4', fixedHeight && 'h-24')}>
               {article.description}
             </p>
           </div>

@@ -51,10 +51,8 @@ export default function FeatureAlternatePositionImage(props: FeatureAlternatePos
                 </div>
                 <div className='flex flex-col justify-between w-full h-full gap-y-7'>
                   <div className='space-y-4'>
-                    <h3 className='text-[26px] leading-8 font-semibold w-fit  bg-clip-text text-brand-600'>
-                      {feature.title}
-                    </h3>
-                    <p className='text-lg leading-7 text-primary-400 font-light'>{feature.description}</p>
+                    <h3 className='text-[26px] leading-8 font-medium text-brand-600'>{feature.title}</h3>
+                    <p className='text-lg leading-7 text-primary-400 font-normal'>{feature.description}</p>
                   </div>
                   <Button
                     asChild
