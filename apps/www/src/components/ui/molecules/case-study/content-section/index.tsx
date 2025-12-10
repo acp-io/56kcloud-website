@@ -25,22 +25,16 @@ export default function CaseStudyContentSection({
   const [isLoaded, setIsLoaded] = useState(false)
 
   return (
-    <ComponentLayout gradientVariant='heroGradient'>
+    <ComponentLayout className='bg-primary-200'>
       <div className='space-y-14 pb-16 pt-52 lg:space-y-20 lg:pb-20 lg:pt-60'>
         <div className='flex flex-col gap-y-20 lg:gap-y-24'>
           <div className='flex flex-col'>
             <div className='space-y-8'>
-              <div className='flex justify-center w-full'>
-                <span className='text-base font-semibold  bg-clip-text text-primary-500'>Case study</span>
-              </div>
-              <h2
-                className='w-fit max-w-5xl mx-auto text-[44px] leading-[52px] font-extrabold tracking-tight text-center \
-               bg-clip-text text-secondary-500'
-              >
+              <h2 className='w-fit max-w-5xl mx-auto text-[44px] leading-[48px] font-medium text-center text-brand-600 lg:leading-[58px]'>
                 {title}
               </h2>
             </div>
-            <div className='max-w-3xl mx-auto text-lg font-light text-center mt-7 text-slate-400'>
+            <div className='max-w-3xl mx-auto text-xl leading-[30px] font-normal text-center mt-7 text-primary-600'>
               <p>{description}</p>
             </div>
           </div>
@@ -62,8 +56,7 @@ export default function CaseStudyContentSection({
             <div className='w-full lg:w-3/12 order-2 lg:order-1'>
               <MarkdownViewer
                 content={attachedText}
-                className='text-sm leading-6 p-0 [&_h3]:w-fit [&_h3]: [&_h3]:bg-clip-text \
-                [&_h3]:text-primary-500'
+                className='text-base leading-[26px] p-0 [&_h3]:text-primary-600'
               />
             </div>
           )}
