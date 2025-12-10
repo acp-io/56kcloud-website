@@ -19,7 +19,7 @@ export default function LogoCloudsSimpleWithTitle(props: LogoCloudsSimpleWithTit
 
   return (
     <ComponentLayout>
-      <div className='pt-9 pb-0 lg:pt-[104px] lg:pb-6'>
+      <div className='pt-9 pb-0 lg:py-[104px]'>
         <div className='mx-auto max-w-7xl'>
           <div className='relative w-full h-full rounded-3xl px-6 py-12 pb-32 bg-primary-600 sm:px-8 lg:rounded-[48px] lg:px-12 lg:pt-20'>
             <div className='flex flex-col items-center space-y-4'>

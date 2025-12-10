@@ -1,5 +1,5 @@
-import {ArrowRightIcon} from '@heroicons/react/24/solid'
 import {Feature} from '@/models/feature.model'
+import Button from '@/components/ui/atoms/button'
 import ComponentLayout from '@/components/ui/atoms/component-layout'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -12,52 +12,49 @@ export type FeatureThreeColumnsWithImageProps = {
 
 export default function FeatureThreeColumnsWithImage(props: FeatureThreeColumnsWithImageProps) {
   return (
-    <ComponentLayout
-      gradientVariant='floatingGradient'
-      className='bg-primary-100'
-    >
+    <ComponentLayout className='bg-primary-200'>
       <div className='py-20 pt-6 lg:py-[104px]'>
         <div className='mx-auto max-w-7xl space-y-10 lg:space-y-20'>
           <div className='mr-auto space-y-4 max-w-4xl'>
-            <h2 className='w-fit text-[44px] leading-[1.1875] font-extrabold tracking-tight text-brand-600'>
+            <h2 className='w-fit text-[44px] leading-[48px] font-medium text-secondary-500 lg:leading-[58px]'>
               {props.title}
             </h2>
-            <p className='text-base leading-7 text-primary-600 font-light'>{props.subtitle}</p>
+            <p className='text-xl leading-[30px] text-slate-400 font-normal'>{props.subtitle}</p>
           </div>
           <div className='mt-11'>
             <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
               {props.features?.map((feature, index) => (
-                <Link
+                <div
                   key={index}
-                  href={feature.link}
+                  className='relative rounded-3xl w-full h-[592px] overflow-hidden bg-white flex flex-col'
                 >
-                  <div className='relative border border-primary-300 rounded-3xl w-full h-[528px] overflow-hidden bg-white'>
-                    <div className='relative w-full h-full overflow-hidden'>
-                      <Image
-                        className='object-cover w-full h-full rounded-xl'
-                        src={feature.image.url}
-                        width={feature.image.width}
-                        height={feature.image.height}
-                        alt={feature.image.alternateText || feature.image.name}
-                      />
-                    </div>
-                    <div className='absolute left-0 bottom-0 flex flex-col p-6 pt-0 sm:p-8 bg-white/95 backdrop-blur-sm rounded-b-3xl'>
-                      <div className='space-y-4'>
-                        <h3 className='text-2xl leading-7 font-semibold w-fit text-brand-600'>{feature.title}</h3>
-                        <p className='text-sm leading-6 text-primary-400 font-light line-clamp-4'>
-                          {feature.description}
-                        </p>
-                      </div>
-                      <div className='flex flex-row items-center gap-2 mt-4 ml-auto'>
-                        <p className='text-sm font-normal text-brand-600'>{feature.cta}</p>
-                        <ArrowRightIcon
-                          className='w-4 h-4 text-brand-600'
-                          strokeWidth={2}
-                        />
-                      </div>
-                    </div>
+                  <div className='relative w-full h-60 overflow-hidden flex-shrink-0'>
+                    <Image
+                      className='object-cover w-full h-full rounded-t-3xl'
+                      src={feature.image.url}
+                      width={feature.image.width}
+                      height={feature.image.height}
+                      alt={feature.image.alternateText || feature.image.name}
+                    />
                   </div>
-                </Link>
+                  <div className='flex flex-col justify-between p-6 sm:p-8 bg-white gap-y-7 flex-1 min-h-0'>
+                    <div className='space-y-4'>
+                      <h3 className='text-[26px] leading-8 font-semibold w-fit bg-clip-text text-brand-600'>
+                        {feature.title}
+                      </h3>
+                      <p className='text-lg leading-7 text-primary-400 font-light line-clamp-6'>
+                        {feature.description}
+                      </p>
+                    </div>
+                    <Button
+                      asChild
+                      size='large'
+                      className='text-white bg-brand-600 px-6 hover:text-white hover:bg-brand-600 flex-shrink-0'
+                    >
+                      <Link href={feature.link}>{feature.cta}</Link>
+                    </Button>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
