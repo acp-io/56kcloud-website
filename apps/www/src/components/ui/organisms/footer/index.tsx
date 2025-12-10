@@ -56,7 +56,7 @@ export default function Footer(props: FooterProps) {
   const currentYear = new Date().getFullYear()
 
   return (
-    <ComponentLayout>
+    <ComponentLayout className='bg-primary-600'>
       <footer aria-labelledby='footer-heading'>
         <h2
           id='footer-heading'
@@ -67,16 +67,16 @@ export default function Footer(props: FooterProps) {
         <div className='pt-9 pb-8 mx-auto max-w-7xl lg:pt-[104px]'>
           <div className='flex flex-col gap-y-12 xl:flex-row xl:justify-between'>
             <div className='max-w-full space-y-8 xl:max-w-sm'>
-              <Logo className='h-5 text-slate-50' />
-              <div className='flex flex-col gap-y-6 min-[432px]:flex-row min-[432px]:space-x-20'>
+              <Logo className='h-6 text-white' />
+              <div className='flex flex-col gap-y-6 min-[432px]:flex-row min-[432px]:space-x-16'>
                 {props.locations &&
                   props.locations.map((location, index) => (
                     <div
                       key={index}
                       className='flex flex-col gap-y-2'
                     >
-                      <BuildingOffice2Icon className='w-6 h-6 translate-y-[2px] text-slate-400' />
-                      <div className='flex flex-col text-sm leading-6 text-slate-400 font-light'>
+                      <BuildingOffice2Icon className='w-6 h-6 translate-y-[2px] text-white' />
+                      <div className='flex flex-col leading-6 text-white font-normal'>
                         <p>{location.address}</p>
                         <p>{`${location.zipCode} ${location.city}`}</p>
                         <p>{location.country}</p>
@@ -86,7 +86,7 @@ export default function Footer(props: FooterProps) {
               </div>
               {props.mwstNumber && (
                 <div>
-                  <p className='text-sm leading-6 text-slate-400 font-light'>
+                  <p className='leading-6 text-white font-normal'>
                     {props.dictionary.mwstNumber}: {props.mwstNumber}
                   </p>
                 </div>
@@ -105,7 +105,7 @@ export default function Footer(props: FooterProps) {
                     >
                       <span className='sr-only'>{item.title}</span>
                       <item.socialIcon
-                        className='w-[18px] h-[18px] text-sky-500'
+                        className='w-[18px] h-[18px] text-white'
                         aria-hidden='true'
                       />
                     </a>
@@ -115,7 +115,7 @@ export default function Footer(props: FooterProps) {
             </div>
             <div className='flex flex-col gap-y-10 min-[848px]:flex-row min-[848px]:justify-between min-[848px]:gap-20'>
               <div>
-                <h3 className='text-sm font-normal text-slate-50'>{props.dictionary.services}</h3>
+                <h3 className='font-normal text-white'>{props.dictionary.services}</h3>
                 <ul
                   role='list'
                   className='mt-4 space-y-3 lg:mt-8'
@@ -126,12 +126,12 @@ export default function Footer(props: FooterProps) {
                         asChild
                         tone='secondary'
                         variant='link'
-                        className='font-light text-slate-400'
+                        className='font-normal text-white'
                         align='start'
                       >
                         <a
                           href={`/services/${item.slug}`}
-                          className='text-sm leading-6 text-slate-400 hover:text-slate-50 !w-44 !break-words'
+                          className='leading-6 !w-[184px] !break-words'
                         >
                           {item.title}
                         </a>
@@ -141,7 +141,7 @@ export default function Footer(props: FooterProps) {
                 </ul>
               </div>
               <div>
-                <h3 className='text-sm font-normal text-slate-50'>{props.dictionary.solutions}</h3>
+                <h3 className='font-normal text-white'>{props.dictionary.solutions}</h3>
                 <ul
                   role='list'
                   className='mt-4 space-y-3 lg:mt-8'
@@ -152,7 +152,7 @@ export default function Footer(props: FooterProps) {
                         asChild
                         tone='secondary'
                         variant='link'
-                        className='font-light text-slate-400 hover:text-slate-50'
+                        className='font-normal text-white'
                       >
                         <a href={`/solutions/${item.slug}`}>{item.title}</a>
                       </Button>
@@ -161,7 +161,7 @@ export default function Footer(props: FooterProps) {
                 </ul>
               </div>
               <div>
-                <h3 className='text-sm font-normal text-slate-50'>{props.dictionary.caseStudies}</h3>
+                <h3 className='font-normal text-white'>{props.dictionary.caseStudies}</h3>
                 <ul
                   role='list'
                   className='mt-4 space-y-3 lg:mt-8'
@@ -172,7 +172,7 @@ export default function Footer(props: FooterProps) {
                         asChild
                         tone='secondary'
                         variant='link'
-                        className='font-light text-slate-400 hover:text-slate-50'
+                        className='font-normal text-white'
                       >
                         <a href={item.link}>{item.title}</a>
                       </Button>
@@ -181,7 +181,7 @@ export default function Footer(props: FooterProps) {
                 </ul>
               </div>
               <div>
-                <h3 className='text-sm font-normal text-slate-50'>{props.dictionary.company}</h3>
+                <h3 className='font-normal text-white'>{props.dictionary.company}</h3>
                 <ul
                   role='list'
                   className='mt-4 space-y-3 lg:mt-8'
@@ -193,7 +193,7 @@ export default function Footer(props: FooterProps) {
                         asChild
                         tone='secondary'
                         variant='link'
-                        className='font-light text-slate-400 hover:text-slate-50'
+                        className='font-normal text-white'
                       >
                         <a href={item.link}>{item.title}</a>
                       </Button>
@@ -203,10 +203,8 @@ export default function Footer(props: FooterProps) {
               </div>
             </div>
           </div>
-          <div className='pt-8 mt-14 border-t border-slate-800'>
-            <p className='text-xs font-light text-slate-400 text-center'>
-              &copy; 56K.Cloud {currentYear} – All rights reserved.
-            </p>
+          <div className='pt-8 mt-14 border-t border-white'>
+            <p className='font-normal text-white text-center'>&copy; 56K.Cloud {currentYear} – All rights reserved.</p>
           </div>
         </div>
       </footer>
