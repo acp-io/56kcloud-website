@@ -14,7 +14,7 @@ export default function IntroductionWithLogo(props: IntroductionWithLogoProps) {
     <ComponentLayout>
       <div className='py-20 lg:py-[104px]'>
         <div className='mx-auto max-w-6xl'>
-          <div className='w-full relative overflow-hidden border border-primary-700 rounded-3xl lg:rounded-[48px] bg-primary-600'>
+          <div className='w-full relative overflow-hidden rounded-3xl lg:rounded-[48px] bg-primary-600'>
             <div className='flex flex-col gap-x-20 gap-y-10 p-6 pt-12 pb-8 lg:p-20 lg:flex-row'>
               <div className='w-full space-y-6 lg:w-3/5'>
                 <h3 className='w-fit text-4xl leading-[42px] font-medium text-white'>{props.title}</h3>

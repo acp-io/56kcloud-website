@@ -22,10 +22,10 @@ export default function FeatureAlternatePositionImage(props: FeatureAlternatePos
     <ComponentLayout className='bg-primary-200'>
       <div className='pb-20 pt-9 lg:pb-[104px] lg:pt-[120px] space-y-10 lg:space-y-20'>
         <div className='text-center space-y-4 max-w-4xl mx-auto'>
-          <h2 className='w-fit mx-auto text-[44px] leading-[48px] font-medium text-secondary-500 lg:leading-[58px]'>
+          <h2 className='w-fit mx-auto text-[44px] leading-[48px] font-medium text-primary-600 lg:leading-[58px]'>
             {props.title}
           </h2>
-          <p className='text-xl leading-[30px] text-slate-400 font-normal'>{props.subtitle}</p>
+          <p className='text-xl leading-[30px] text-primary-600 font-normal'>{props.subtitle}</p>
         </div>
         <div className='grid grid-cols-1 gap-8 lg:grid-cols-3 lg:grid-rows-4'>
           {props.features?.map((feature, index) => (
