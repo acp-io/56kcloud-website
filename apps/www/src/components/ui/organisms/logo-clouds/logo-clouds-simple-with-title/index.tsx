@@ -8,7 +8,6 @@ import Link from 'next/link'
 export type LogoCloudVariant = 'slider' | 'grid'
 
 export type LogoCloudsSimpleWithTitleProps = {
-  surtitle?: string
   title: string
   items: Array<Partner | Customer>
   variant?: LogoCloudVariant
@@ -23,10 +22,7 @@ export default function LogoCloudsSimpleWithTitle(props: LogoCloudsSimpleWithTit
         <div className='mx-auto max-w-7xl'>
           <div className='relative w-full h-full rounded-3xl px-6 py-12 pb-32 bg-primary-600 sm:px-8 lg:rounded-[48px] lg:px-12 lg:pt-20'>
             <div className='flex flex-col items-center space-y-4'>
-              {props.surtitle && (
-                <span className='text-base font-semibold bg-clip-text text-white'>{props.surtitle}</span>
-              )}
-              <h2 className='w-fit text-[44px] leading-[1.1875] font-extrabold text-center tracking-tight bg-clip-text text-white'>
+              <h2 className='w-fit text-[44px] leading-[48px] font-medium text-white lg:leading-[58px]'>
                 {props.title}
               </h2>
             </div>

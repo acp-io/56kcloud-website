@@ -16,8 +16,7 @@ export default function InfiniteSliderLogos(props: InfiniteSliderLogosProps) {
       {props.logos.map((logo, index) => (
         <div
           key={props.logos.length + index}
-          className='flex items-center justify-center mx-4 w-[234px] p-7 sm:p-8 lg:p-10 bg-primary-900 rounded-2xl \
-          border border-slate-800'
+          className='flex items-center justify-center mx-4 w-[234px] p-7 sm:p-8 lg:p-10 bg-brand-600 rounded-2xl'
         >
           <Image
             className='max-h-6 sm:max-h-8 lg:max-h-10'

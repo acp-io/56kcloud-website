@@ -35,7 +35,15 @@ export default function TagList({tags}: TagListProps) {
             key={tag.name}
             href={href}
           >
-            <Badge className={queryTag ? (slugify(tag.name).toLowerCase() === queryTag ? '' : 'opacity-30') : ''}>
+            <Badge
+              className={
+                queryTag
+                  ? slugify(tag.name).toLowerCase() === queryTag
+                    ? 'bg-brand-600 text-white ring-0 hover:bg-brand-600 hover:text-white'
+                    : 'bg-brand-600 text-white ring-0 opacity-30 hover:bg-brand-600 hover:text-white'
+                  : 'bg-brand-600 text-white ring-0 hover:bg-brand-600 hover:text-white'
+              }
+            >
               {tag.name}
             </Badge>
           </Link>

@@ -26,8 +26,7 @@ export default function ArticleCard({article, fixedHeight}: ArticleCardProps) {
       <Link
         href={`/blog/${article.slug}`}
         className={cn(
-          'relative flex flex-col overflow-hidden cursor-pointer border border-primary-300 rounded-3xl w-full h-full \
-          gap-x-10 gap-y-6 p-6 sm:p-8 bg-white',
+          'relative flex flex-col overflow-hidden cursor-pointer rounded-3xl w-full h-full gap-x-10 gap-y-6 p-6 sm:p-8 bg-white',
           fixedHeight ? 'h-[576px]' : ''
         )}
       >

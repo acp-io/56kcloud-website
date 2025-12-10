@@ -6,9 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "surtitle": {
-      "type": "string"
-    },
     "title": {
       "type": "string",
       "required": true
