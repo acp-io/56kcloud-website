@@ -60,7 +60,7 @@ export default function ArticleCard({article, fixedHeight}: ArticleCardProps) {
             />
             <div className='flex flex-col text-base'>
               <span className='text-sm leading-6 font-medium text-primary-600'>{article.author.name}</span>
-              <div className='text-sm leading-6 flex font-light gap-x-2'>
+              <div className='text-sm leading-6 flex font-normal text-primary-400 gap-x-2'>
                 <span>
                   {publishedOn} – {article.readTime} minute
                   {article.readTime > 1 ? 's' : ''} read
