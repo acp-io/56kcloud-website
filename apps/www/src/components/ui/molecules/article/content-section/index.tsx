@@ -28,7 +28,7 @@ export default function ArticleContentSection({
 }: ArticleContentSectionProps) {
   content = `# ${title} \n ${content}`
   return (
-    <div className='flex items-center justify-center pt-48 sm:pt-40 pb-24'>
+    <div className='flex items-center justify-center pt-28 sm:pt-40 pb-24'>
       <div className='w-full px-6 mx-auto max-w-7xl lg:px-8'>
         <div className='z-50 w-full h-full overflow-auto bg-white/5 max-w-7xl rounded-xl overscroll-contain'>
           <ArticleCover image={image} />
