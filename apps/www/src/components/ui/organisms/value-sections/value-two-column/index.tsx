@@ -28,9 +28,9 @@ export default function ValueTwoColumn(props: ValueTwoColumnProps) {
                 index === 4 ? 'lg:col-start-7' : ''
               )}
             >
-              <div className='flex flex-col items-center justify-center gap-y-2 p-8 z-10 bg-primary-200 rounded-3xl'>
+              <div className='flex flex-col items-center justify-center gap-y-2 p-8 z-10 bg-brand-100 rounded-3xl'>
                 <h3 className='text-[26px] leading-8 font-medium text-brand-600 text-center'>{value.name}</h3>
-                <p className='text-lg leading-7 text-primary-400 font-normal text-center'>{value.description}</p>
+                <p className='text-lg leading-7 text-primary-600 font-normal text-center'>{value.description}</p>
               </div>
             </div>
           ))}

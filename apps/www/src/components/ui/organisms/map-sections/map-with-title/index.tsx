@@ -14,17 +14,17 @@ export type MapWithTitleProps = {
 
 export function MapLocationCard({location}: {location: LocationObject}) {
   return (
-    <div className='w-full rounded-xl border border-slate-800 bg-slate-900 sm:block sm:w-80 sm:h-24 sm:fixed'>
+    <div className='w-full rounded-xl bg-primary-600 sm:block sm:w-80 sm:h-24 sm:fixed'>
       <div className='w-full h-full flex flex-row gap-x-4 px-7 py-5'>
         <div className='flex justify-center items-center'>
           <BuildingOffice2Icon
-            className='w-14 h-14 text-sky-500'
+            className='w-14 h-14 text-brand-600'
             strokeWidth={1.25}
           />
         </div>
         <div className='w-full h-full flex flex-col gap-y-1'>
-          <h3 className='text-2xl leading-7 font-semibold w-fit  bg-clip-text text-primary-500'>{location.city}</h3>
-          <p className='text-base text-slate-50 font-light'>{location.address}</p>
+          <h3 className='text-2xl leading-7 font-semibold w-fit  bg-clip-text text-white'>{location.city}</h3>
+          <p className='text-base text-white font-light'>{location.address}</p>
         </div>
       </div>
     </div>
@@ -44,13 +44,12 @@ export default function MapWithTitle(props: MapWithTitleProps) {
     <ComponentLayout>
       <div className='pb-20 pt-9 lg:pb-[104px] lg:pt-[120px]'>
         <div className='mx-auto text-center space-y-4 max-w-4xl'>
-          <h2
-            className='w-fit text-[44px] leading-[1.1875] font-extrabold tracking-tight  bg-clip-text \
-            text-secondary-500 lg:mx-auto'
-          >
+          <h2 className='w-fit text-[44px] leading-[48px] font-medium text-primary-600 lg:leading-[58px] lg:mx-auto'>
             {props.title}
           </h2>
-          <p className='text-base leading-7 text-slate-400 font-light text-left lg:text-center'>{props.subtitle}</p>
+          <p className='text-xl leading-[30px] text-primary-600 font-normal text-left lg:text-center'>
+            {props.subtitle}
+          </p>
         </div>
         <div className='flex flex-col gap-y-4 mt-10 sm:hidden'>
           <MapLocationCard location={winterthurLocation} />
