@@ -21,7 +21,7 @@ export default function HeroWithGradient(props: HeroWithGradientProps) {
 
   return (
     <ComponentLayout className='bg-brand-600'>
-      <div className='pb-8 pt-52 lg:pb-20 lg:pt-60'>
+      <div className='pb-16 pt-40 lg:pb-20 lg:pt-60'>
         <h2 className='w-fit max-w-5xl mx-auto text-center text-5xl leading-[1.1875] font-medium text-white lg:text-[58px]'>
           {title}
         </h2>

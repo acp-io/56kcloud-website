@@ -27,7 +27,7 @@ export default function FeatureThreeColumnWithIconsAndCTAs(props: FeatureThreeCo
             {props.features?.map((feature, index) => (
               <div
                 key={index}
-                className='flex flex-col bg-white rounded-3xl lg:p-8 space-y-3'
+                className='flex flex-col bg-white p-6 rounded-3xl lg:p-8 space-y-3'
               >
                 <div className='flex items-center gap-x-3'>
                   <div className='flex items-start h-full translate-y-[2px]'>

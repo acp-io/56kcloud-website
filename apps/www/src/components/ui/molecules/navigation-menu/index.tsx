@@ -95,7 +95,7 @@ export default function NavigationMenu({
       <div className='flex-col space-y-10'>
         {navigationItems.map((navigationItem, index) => (
           <div key={index}>
-            <p className='text-base font-medium text-primary-100'>{navigationItem.title}</p>
+            <p className='text-base font-medium text-brand-600'>{navigationItem.title}</p>
             <ul
               className={cn(
                 !navigationItem.links || navigationItem.links.length === 0 ? 'mt-0' : 'mt-4',
@@ -110,8 +110,8 @@ export default function NavigationMenu({
                     tone='primary'
                     variant='link'
                     className={cn(
-                      pathMatcher(link.link) ? '!text-primary-100' : '',
-                      'text-sm font-medium text-primary-300 hover:text-primary-100'
+                      pathMatcher(link.link) ? '!text-primary-400' : '',
+                      'text-sm font-medium text-primary-600 hover:text-primary-400'
                     )}
                   >
                     <Link

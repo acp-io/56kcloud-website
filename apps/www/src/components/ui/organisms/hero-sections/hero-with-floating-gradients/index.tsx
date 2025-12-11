@@ -14,7 +14,7 @@ export type HeroWithFloatingGradientsProps = {
 export default function HeroWithFloatingGradients(props: HeroWithFloatingGradientsProps) {
   return (
     <ComponentLayout className='overflow-hidden bg-brand-600'>
-      <div className='pb-8 pt-52 lg:pt-64 lg:pb-20'>
+      <div className='pb-16 pt-40 lg:pt-64 lg:pb-20'>
         <h1 className='w-fit mx-auto text-center text-5xl leading-[1.1875] font-medium text-white lg:text-7xl lg:leading-[1.2]'>
           {props.title}
         </h1>

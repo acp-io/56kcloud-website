@@ -37,7 +37,7 @@ export default function Header({dictionary}: HeaderProps) {
         <div className='flex lg:hidden'>
           <button
             type='button'
-            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400'
+            className='-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-primary-600'
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className='sr-only'>Open main menu</span>
@@ -68,7 +68,7 @@ export default function Header({dictionary}: HeaderProps) {
           className={cn(
             mobileMenuOpen ? 'animate-in slide-in-from-right-full' : 'animate-out slide-out-to-right-full',
             'fixed flex flex-col justify-between inset-y-0 right-0 z-50 w-full p-6 overflow-y-auto \
-          bg-gray-900 sm:max-w-sm sm:ring-1 sm:ring-white/10 duration-500 ease-in-out'
+          bg-brand-100 sm:max-w-sm sm:ring-1 sm:ring-white/10 duration-500 ease-in-out'
           )}
         >
           <div className='flex flex-col gap-y-12'>
@@ -82,7 +82,7 @@ export default function Header({dictionary}: HeaderProps) {
               </Link>
               <button
                 type='button'
-                className='-m-2.5 rounded-md p-2.5 text-gray-400'
+                className='-m-2.5 rounded-md p-2.5 text-brand-600'
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className='sr-only'>Close menu</span>

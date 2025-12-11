@@ -30,18 +30,18 @@ export default function LanguageSwitcher({mobileMenuOpen}: LanguageSwitcherProps
   }
 
   const pathMatcher = (path: string) => {
-    return pathname.startsWith(`/${path}/`)
+    return pathname.startsWith(`/${path}/`) || pathname === `/${path}`
   }
 
   return mobileMenuOpen ? (
-    <div className='w-full h-auto flex justify-start gap-x-8 mt-8 p-0 pt-4 border-t rounded-none border-slate-800'>
+    <div className='w-full h-auto flex justify-start gap-x-8 mt-8 p-0 pt-4 border-t rounded-none border-brand-600'>
       {locales.map((locale) => (
         <Button
           asChild
           key={locale}
           tone='secondary'
           variant='link'
-          className='p-0 text-base text-slate-400 uppercase data-[active=true]:text-slate-50 hover:text-slate-50'
+          className='p-0 font-normal text-primary-600 uppercase data-[active=true]:text-primary-400 hover:text-primary-400'
           data-active={pathMatcher(locale)}
         >
           <Link

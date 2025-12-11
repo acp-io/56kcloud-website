@@ -41,7 +41,7 @@ export default function CaseStudiesThreeColumnWithImage(props: CaseStudiesThreeC
                     alt={caseStudy.image.alternateText || caseStudy.image.name}
                   />
                 </div>
-                <div className='flex flex-col justify-between w-full h-full'>
+                <div className='flex flex-col justify-between w-full h-full gap-y-6'>
                   <div className='space-y-4'>
                     <h3 className='text-lg leading-6 font-medium text-brand-600 \ line-clamp-2'>{caseStudy.title}</h3>
                     <p className='text-sm leading-6 text-primary-400 font-normal'>{caseStudy.description}</p>
