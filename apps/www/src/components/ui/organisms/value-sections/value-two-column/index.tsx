@@ -1,7 +1,6 @@
 import {Value} from '@/models/value.model'
 import {cn} from '@/utils/toolbox'
 import ComponentLayout from '@/components/ui/atoms/component-layout'
-import Image from 'next/image'
 
 export type ValueTwoColumnProps = {
   title: string
@@ -29,23 +28,9 @@ export default function ValueTwoColumn(props: ValueTwoColumnProps) {
                 index === 4 ? 'lg:col-start-7' : ''
               )}
             >
-              <div className='absolute inset-0 flex flex-col items-center justify-center gap-y-2 px-4 z-10'>
-                <h3
-                  className='text-2xl leading-7 font-semibold text-center w-fit  bg-clip-text \
-                  text-primary-500'
-                >
-                  {value.name}
-                </h3>
-                <p className='text-center text-base leading-7 text-slate-50 font-light'>{value.description}</p>
-              </div>
-              <div className='relative w-full'>
-                <Image
-                  className='w-full h-auto object-cover'
-                  src={value.background.url}
-                  width={value.background.width}
-                  height={value.background.height}
-                  alt={value.background.alternateText || value.background.name}
-                />
+              <div className='flex flex-col items-center justify-center gap-y-2 p-8 z-10 bg-primary-200 rounded-3xl'>
+                <h3 className='text-[26px] leading-8 font-medium text-brand-600 text-center'>{value.name}</h3>
+                <p className='text-lg leading-7 text-primary-400 font-normal text-center'>{value.description}</p>
               </div>
             </div>
           ))}
