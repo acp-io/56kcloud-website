@@ -26,7 +26,7 @@ export default function HeroWithFloatingGradients(props: HeroWithFloatingGradien
             asChild
             size='large'
             tone={props.cta.tone}
-            className='text-brand-600 bg-white px-6 hover:bg-primary-100 hover:text-brand-600'
+            className='text-white bg-brand-600 border border-white px-6 hover:bg-white hover:text-brand-600'
           >
             <Link
               href={props.cta.link}
