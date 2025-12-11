@@ -30,10 +30,10 @@ export default function ChallengeThreeColumn(props: ChallengeThreeColumnProps) {
     <ComponentLayout gradientVariant='floatingGradient'>
       <div className='pb-20 pt-9 lg:pb-[104px] lg:pt-[120px] space-y-11 lg:space-y-20'>
         <div className='mx-auto text-center space-y-4 max-w-4xl'>
-          <h2 className='w-fit mx-auto text-[44px] leading-[48px] font-extrabold tracking-tight  bg-clip-text text-secondary-500 lg:leading-[58px]'>
+          <h2 className='w-fit mx-auto text-[44px] leading-[48px] font-medium text-primary-600 lg:leading-[58px]'>
             {props.title}
           </h2>
-          <p className='text-base leading-7 text-slate-400 font-light'>{props.subtitle}</p>
+          <p className='text-xl leading-[30px] text-primary-600 font-normal'>{props.subtitle}</p>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-20 lg:gap-28 mb-16'>
           {props.challenges.map((challenge, index) => (
@@ -59,31 +59,27 @@ export default function ChallengeThreeColumn(props: ChallengeThreeColumnProps) {
                   />
                 </>
               )}
-              <h3 className='text-2xl leading-7 font-semibold w-fit  bg-clip-text text-primary-500'>
-                {challenge.title}
-              </h3>
+              <h3 className='text-2xl leading-7 font-medium text-primary-600'>{challenge.title}</h3>
               <div className='flex flex-col space-y-6 mt-4'>
-                <p className='text-base leading-7 font-light text-slate-400'>{challenge.description}</p>
+                <p className='text-lg leading-7 font-normal text-primary-400'>{challenge.description}</p>
                 <div className='flex flex-row space-x-4'>
                   <TrendingDown
-                    className='flex-none text-sky-500 w-5 h-5 translate-y-1'
+                    className='flex-none text-brand-600 w-5 h-5 translate-y-1'
                     strokeWidth={2}
                   />
-                  <span className='text-base leading-7 font-light text-sky-500'>{challenge.stat}</span>
+                  <span className='leading-7 font-normal text-brand-600'>{challenge.stat}</span>
                 </div>
               </div>
               <div className='flex flex-col space-y-2 mt-8'>
-                <h4 className='text-xl w-fit font-semibold tracking-tight  bg-clip-text text-secondary-500'>
-                  {challenge.solution.title}
-                </h4>
+                <h4 className='text-xl font-medium text-primary-600'>{challenge.solution.title}</h4>
                 <div className='flex flex-col space-y-4'>
-                  <p className='text-base leading-7 font-light text-slate-400'>{challenge.solution.description}</p>
+                  <p className='text-lg leading-7 font-normal text-primary-400'>{challenge.solution.description}</p>
                   <div className='flex flex-row space-x-4'>
                     <TrendingUp
-                      className='flex-none text-sky-500 w-5 h-5 translate-y-1'
+                      className='flex-none text-brand-600 w-5 h-5 translate-y-1'
                       strokeWidth={2}
                     />
-                    <span className='text-base leading-7 font-light text-sky-500'>{challenge.solution.stat}</span>
+                    <span className='leading-7 font-normal text-brand-600'>{challenge.solution.stat}</span>
                   </div>
                 </div>
               </div>
