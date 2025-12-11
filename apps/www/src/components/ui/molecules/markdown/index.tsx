@@ -21,8 +21,7 @@ export default function MarkdownViewer({content, className, imageClassName}: Mar
     <div className='flex justify-center w-full'>
       <div
         className={cn(
-          'w-full px-4 text-lg leading-7 text-primary-600 font-normal prose prose-invert max-w-7xl prose-config',
-
+          'w-full px-4 text-lg leading-7 text-primary-600 font-normal prose prose-invert max-w-7xl prose-config prose-a:text-brand-600 prose-strong:text-primary-600 prose-strong:font-medium prose-em:text-primary-600 prose-code:text-primary-600',
           className
         )}
       >

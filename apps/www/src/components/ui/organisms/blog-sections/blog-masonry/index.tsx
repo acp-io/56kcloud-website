@@ -43,7 +43,7 @@ export default function BlogMasonry(props: BlogMasonryProps) {
   ))
 
   return (
-    <ComponentLayout>
+    <ComponentLayout className='bg-primary-200'>
       <div className='pb-20 pt-9 lg:pt-20 lg:pb-[104px]'>
         <MasonryLayout>{articles}</MasonryLayout>
       </div>

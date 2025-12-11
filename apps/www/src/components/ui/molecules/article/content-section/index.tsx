@@ -28,19 +28,16 @@ export default function ArticleContentSection({
 }: ArticleContentSectionProps) {
   content = `# ${title} \n ${content}`
   return (
-    <div className='flex items-center justify-center pt-48 sm:pt-52 pb-14'>
+    <div className='flex items-center justify-center pt-48 sm:pt-40 pb-24'>
       <div className='w-full px-6 mx-auto max-w-7xl lg:px-8'>
         <div className='z-50 w-full h-full overflow-auto bg-white/5 max-w-7xl rounded-xl overscroll-contain'>
           <ArticleCover image={image} />
-          <div className='w-full p-6 pt-10 md:p-10'>
+          <div className='w-full p-6 pt-10 bg-primary-200 md:p-10'>
             <div className='flex flex-col-reverse justify-between gap-y-4 md:items-center md:flex-row'>
               <Suspense>
                 <PostTagList tags={tags} />
               </Suspense>
-              <div
-                className='flex flex-row items-center justify-start overflow-hidden text-sm leading-6 \
-                 text-gray-300 gap-y-4'
-              >
+              <div className='flex flex-row items-center justify-start overflow-hidden text-sm leading-6 text-primary-600 gap-y-4'>
                 <time
                   dateTime={publishedOn}
                   className='md:mr-8'
@@ -60,7 +57,7 @@ export default function ArticleContentSection({
                   </svg>
                   <Link
                     href={`/about-us#${author.slug}`}
-                    className='flex gap-x-2.5 items-center hover:underline'
+                    className='flex gap-x-2.5 items-center font-medium hover:underline'
                   >
                     <Avatar
                       size='sm'
