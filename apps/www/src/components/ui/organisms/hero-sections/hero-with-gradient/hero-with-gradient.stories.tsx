@@ -7,7 +7,6 @@ const meta = {
   component: HeroWithGradient,
   tags: ['autodocs'],
   args: {
-    surtitle: faker.lorem.sentence(),
     title: faker.lorem.sentence(),
     subtitle: faker.lorem.sentence()
   }
