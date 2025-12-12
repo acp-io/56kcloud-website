@@ -10,7 +10,6 @@ export type CustomerLogosSimpleWithTitleProps = {
 export default function CustomerLogosSimpleWithTitle(props: CustomerLogosSimpleWithTitleProps) {
   return (
     <LogoCloudsSimpleWithTitle
-      surtitle={props.surtitle}
       title={props.title}
       items={props.customers}
     />
