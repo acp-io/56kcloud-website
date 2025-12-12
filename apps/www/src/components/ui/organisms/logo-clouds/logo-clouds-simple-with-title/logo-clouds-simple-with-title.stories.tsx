@@ -8,7 +8,6 @@ const meta = {
   component: LogoCloudsSimpleWithTitle,
   tags: ['autodocs'],
   args: {
-    surtitle: faker.lorem.sentence(),
     title: faker.lorem.sentence(),
     items: Array.from({length: 4}, () => partnerFactory())
   }
