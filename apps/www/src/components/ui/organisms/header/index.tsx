@@ -7,7 +7,7 @@ import {cn, getNavigationLinks} from '@/utils/toolbox'
 import {useState} from 'react'
 import LanguageSwitcher from '../../molecules/language-switcher'
 import Link from 'next/link'
-import Logo from '../../svgs/logos/acp-e'
+import Logo from '../../svgs/logos/acp'
 import NavigationMenu from '../../molecules/navigation-menu'
 
 export type HeaderProps = {
@@ -22,7 +22,7 @@ export default function Header({dictionary}: HeaderProps) {
   return (
     <header className='absolute inset-x-0 top-0 z-10 flex flex-col justify-center items-center bg-white'>
       <nav
-        className='flex items-center justify-between w-full p-6 max-w-7xl'
+        className='flex items-center justify-between w-full px-6 py-4 max-w-7xl'
         aria-label='Global'
       >
         <div className='relative'>
@@ -30,8 +30,8 @@ export default function Header({dictionary}: HeaderProps) {
             href='/'
             className='text-slate-50'
           >
-            <span className='sr-only'>ACP Engineering</span>
-            <Logo className='h-8 xl:h-10' />
+            <span className='sr-only'>ACP</span>
+            <Logo className='h-12 xl:h-16' />
           </Link>
         </div>
         <div className='flex lg:hidden'>
@@ -67,7 +67,7 @@ export default function Header({dictionary}: HeaderProps) {
         <Dialog.Panel
           className={cn(
             mobileMenuOpen ? 'animate-in slide-in-from-right-full' : 'animate-out slide-out-to-right-full',
-            'fixed flex flex-col justify-between inset-y-0 right-0 z-50 w-full p-6 overflow-y-auto \
+            'fixed flex flex-col justify-between inset-y-0 right-0 z-50 w-full px-6 py-4 overflow-y-auto \
           bg-brand-100 sm:max-w-sm sm:ring-1 sm:ring-white/10 duration-500 ease-in-out'
           )}
         >
@@ -78,7 +78,7 @@ export default function Header({dictionary}: HeaderProps) {
                 className='-m-1.5 p-1.5 text-white'
               >
                 <span className='sr-only'>ACP Engineering</span>
-                <Logo className='h-7' />
+                <Logo className='h-12' />
               </Link>
               <button
                 type='button'
