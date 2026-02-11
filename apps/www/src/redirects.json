@@ -93,5 +93,5 @@
   "solutions/foundations": "solutions/industrial-iot",
   "solutions/generative-ai": "solutions/generative-ai",
   "solutions/iot-edge-and-cloud-integration": "solutions/industrial-iot",
-  "solutions/landing-zones": "solutions/landing-zones",
+  "solutions/landing-zones": "solutions/landing-zones"
 }
