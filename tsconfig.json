@@ -2,6 +2,5 @@
   "compilerOptions": {
     "module": "NodeNext"
   },
-  "include": ["scripts/**/*.ts"],
   "exclude": ["node_modules"]
 }
