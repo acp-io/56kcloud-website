@@ -127,3 +127,9 @@ public/blog
 *.dump
 storybook-check.md
 storybook-static
+
+############################
+# Planning
+############################
+
+.planning/
