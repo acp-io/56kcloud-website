@@ -22,7 +22,12 @@ export function middleware(request: NextRequest) {
   const isLocale = locales.includes(firstSegment as Locale)
 
   if (!isLocale) {
-    // No language prefix - redirect to homepage per REDIR-05
+    // No language prefix — check if the path itself is a known redirect
+    const targetPath = redirects[pathWithoutSlash as keyof typeof redirects]
+    if (targetPath !== undefined && targetPath !== '') {
+      return NextResponse.redirect(new URL(`https://www.acp.io/${targetPath}`), { status: 301 })
+    }
+    // Otherwise redirect to homepage per REDIR-05
     return NextResponse.redirect(new URL('https://www.acp.io/'), { status: 301 })
   }
 
