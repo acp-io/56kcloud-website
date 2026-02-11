@@ -23,6 +23,6 @@
       }
     ]
   },
-  "exclude": ["node_modules", "./src/old-components"],
+  "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"]
 }

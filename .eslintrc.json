@@ -20,7 +20,6 @@
   },
   "plugins": ["@typescript-eslint", "sort-imports-es6-autofix", "react"],
   "rules": {
-    "react-hooks/exhaustive-deps": "off",
     "sort-imports-es6-autofix/sort-imports-es6": [
       2,
       {
@@ -29,7 +28,6 @@
         "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
       }
     ],
-    "import/no-anonymous-default-export": "off",
     "no-extra-semi": "off",
     "@next/next/no-html-link-for-pages": "off"
   }
